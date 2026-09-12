@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/pegasus-design-system-8b8cad2e-d329-41fc-bc45-8ce3dfbe43bb/colors_and_type.css">
+<link rel="stylesheet" href="_ds/pegasus-design-system-8b8cad2e-d329-41fc-bc45-8ce3dfbe43bb/styles.css">
+<script src="_ds/pegasus-design-system-8b8cad2e-d329-41fc-bc45-8ce3dfbe43bb/_ds_bundle.js"></script>
+<style>
+  html, body { margin:0; padding:0; background:#0B1120; }
+  h1, h2, h3, h4, p { color: inherit; }
+  a { color:#F59E0B; text-decoration:none; }
+  a:hover { color:#FBBF24; }
+  @keyframes kz-pullpush { 0%,100% { transform:translateX(0); } 50% { transform:translateX(-26px); } }
+  @keyframes kz-react { 0%,100% { transform:translateX(0); } 50% { transform:translateX(26px); } }
+  @keyframes kz-glow { 0%,100% { opacity:.35; } 50% { opacity:.9; } }
+  @keyframes kz-fall { 0%,100% { transform:rotate(-4deg); } 50% { transform:rotate(-12deg); } }
+  @keyframes kz-dash { to { stroke-dashoffset:-40; } }
+</style>
+</helmet>
+<div style="width:100%;height:100vh;min-height:560px;background:#0B1120;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:Roboto, Arial, sans-serif;" ref="{{ hostRef }}">
+<div style="width:1600px;height:900px;flex:none;transform-origin:center center;transform:{{ stageTransform }};background:#0F172A;color:#F8FAFC;position:relative;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.65);">
+
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#1E293B;">
+    <div style="height:4px;background:linear-gradient(90deg,#F59E0B,#FBBF24);width:{{ elapsedPct }};transition:width .9s linear;"></div>
+  </div>
+
+  <div style="position:absolute;top:40px;left:72px;right:72px;display:flex;align-items:center;justify-content:space-between;z-index:3;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div style="width:34px;height:34px;border:2px solid #F59E0B;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;color:#F59E0B;letter-spacing:.5px;">柔</div>
+      <div style="font-size:15px;letter-spacing:2.6px;text-transform:uppercase;color:#94A3B8;">JUDO ·&nbsp; ACTION–REACTION</div>
+    </div>
+    <div style="font-size:15px;letter-spacing:2.6px;text-transform:uppercase;color:#94A3B8;">Slide {{ slideNo }} / 04 &nbsp;·&nbsp; {{ slideRange }}</div>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <section data-screen-label="01" style="{{ s1 }}">
+    <div style="display:grid;grid-template-columns:1fr 1fr;height:100%;">
+      <div style="padding:150px 60px 210px 72px;display:flex;flex-direction:column;justify-content:center;gap:30px;">
+        <div style="align-self:flex-start;border:1px solid rgba(245,158,11,.55);border-radius:20px;padding:11px 20px;line-height:1.4;max-width:100%;flex:none;font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#F59E0B;background:rgba(245,158,11,.08);">Welcome</div>
+        <h1 style="font-family:'Alegreya Sans',sans-serif;color:#F8FAFC;font-size:92px;line-height:1.02;margin:0;font-weight:500;letter-spacing:-1.5px;text-wrap:pretty;">KUZUSHI:<br><span style="color:#F59E0B;">The Art of Balance</span></h1>
+        <div style="width:100px;height:4px;background:#0078AE;"></div>
+        <p style="font-size:30px;line-height:1.4;margin:0;color:#CBD5E1;max-width:620px;">A 10-minute masterclass</p>
+        <p style="font-size:21px;line-height:1.5;margin:0;color:#94A3B8;max-width:600px;">Have you ever pulled on a door that was already open? You pull harder, but nothing happens. You pull again, and the harder you try, the less sense it makes. What if your opponent is the same?</p>
+      </div>
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;background:#111C33;border-left:1px solid #1E293B;">
+        <div style="position:relative;width:560px;height:480px;">
+          <div style="position:absolute;left:40px;top:20px;width:220px;height:440px;background:#16223C;border:3px solid #334155;border-radius:6px 6px 0 0;"></div>
+          <div style="position:absolute;left:40px;top:20px;width:220px;height:440px;border-left:10px solid #F59E0B;border-radius:6px 0 0 0;"></div>
+          <div style="position:absolute;left:222px;top:230px;width:26px;height:8px;background:#94A3B8;border-radius:4px;"></div>
+          <div style="position:absolute;left:76px;top:150px;width:148px;padding:14px 0;text-align:center;background:#F59E0B;color:#0F172A;font-size:30px;font-weight:500;letter-spacing:6px;border-radius:4px;box-shadow:0 0 60px rgba(245,158,11,.55);animation:kz-glow 2.6s ease-in-out infinite;">PUSH</div>
+          <div style="position:absolute;left:360px;top:120px;width:150px;height:300px;transform-origin:50% 100%;animation:kz-fall 3.2s ease-in-out infinite;">
+            <div style="position:absolute;left:52px;top:0;width:46px;height:46px;border-radius:50%;background:#F8FAFC;"></div>
+            <div style="position:absolute;left:68px;top:52px;width:14px;height:130px;border-radius:7px;background:#F8FAFC;"></div>
+            <div style="position:absolute;left:14px;top:70px;width:120px;height:12px;border-radius:6px;background:#CBD5E1;transform:rotate(-18deg);"></div>
+            <div style="position:absolute;left:36px;top:176px;width:13px;height:118px;border-radius:7px;background:#F8FAFC;transform:rotate(12deg);"></div>
+            <div style="position:absolute;left:98px;top:176px;width:13px;height:118px;border-radius:7px;background:#F8FAFC;transform:rotate(-14deg);"></div>
+          </div>
+          <div style="position:absolute;left:300px;right:0;bottom:12px;height:2px;background:#334155;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 -->
+  <section data-screen-label="02" style="{{ s2 }}">
+    <div style="display:grid;grid-template-columns:1fr 1fr;height:100%;">
+      <div style="padding:124px 60px 176px 72px;display:flex;flex-direction:column;justify-content:center;gap:22px;">
+        <div style="align-self:flex-start;border:1px solid rgba(245,158,11,.55);border-radius:20px;padding:11px 20px;line-height:1.4;max-width:100%;flex:none;font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#F59E0B;background:rgba(245,158,11,.08);">The principle</div>
+        <h1 style="font-family:'Alegreya Sans',sans-serif;color:#F8FAFC;font-size:78px;line-height:1.05;margin:0;font-weight:500;letter-spacing:-1.2px;">Action &amp; Reaction</h1>
+        <div style="width:100px;height:4px;background:#0078AE;"></div>
+        <div style="display:flex;flex-direction:column;gap:22px;max-width:660px;">
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.5);color:#F59E0B;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:500;">1</div>
+            <div>
+              <div style="font-size:27px;font-weight:500;margin-bottom:6px;">Newton's 3rd Law</div>
+              <div style="font-size:21px;line-height:1.5;color:#94A3B8;">Every action has an equal and opposite reaction. Your partner is not an obstacle — they are a force generator.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.5);color:#F59E0B;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:500;">2</div>
+            <div>
+              <div style="font-size:27px;font-weight:500;margin-bottom:6px;">The Pull Trap</div>
+              <div style="font-size:21px;line-height:1.5;color:#94A3B8;">Pulling a partner causes them to pull back to stay upright. Borrow that returning force — don't fight it.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;background:#111C33;border-left:1px solid #1E293B;">
+        <div style="width:600px;">
+          <div style="font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#64748B;margin-bottom:34px;text-align:center;">Force diagram · top-down view</div>
+          <div style="position:relative;height:300px;">
+            <div style="position:absolute;left:0;right:0;top:40px;display:flex;align-items:center;gap:18px;animation:kz-pullpush 3.4s ease-in-out infinite;">
+              <div style="flex:none;font-size:17px;letter-spacing:1.6px;text-transform:uppercase;color:#F59E0B;width:150px;text-align:right;font-weight:500;">Pull force</div>
+              <svg viewBox="0 0 400 40" style="flex:1;height:40px;"><defs><marker id="kzA" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M10,5 L0,0 L0,10 z" fill="#F59E0B"></path></marker></defs><line x1="400" y1="20" x2="16" y2="20" stroke="#F59E0B" stroke-width="6" marker-end="url(#kzA)"></line></svg>
+            </div>
+            <div style="position:absolute;left:0;right:0;top:130px;display:flex;align-items:center;justify-content:center;gap:26px;">
+              <div style="width:96px;height:96px;border-radius:50%;border:3px solid #F8FAFC;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:1.6px;color:#F8FAFC;">TORI</div>
+              <svg viewBox="0 0 120 12" style="width:120px;height:12px;"><line x1="0" y1="6" x2="120" y2="6" stroke="#475569" stroke-width="4" stroke-dasharray="10 10" style="animation:kz-dash 1.6s linear infinite;"></line></svg>
+              <div style="width:96px;height:96px;border-radius:50%;border:3px solid #0078AE;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:1.6px;color:#7DD3FC;">UKE</div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:18px;animation:kz-react 3.4s ease-in-out infinite;">
+              <svg viewBox="0 0 400 40" style="flex:1;height:40px;"><defs><marker id="kzB" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M10,5 L0,0 L0,10 z" fill="#7DD3FC"></path></marker></defs><line x1="0" y1="20" x2="384" y2="20" stroke="#7DD3FC" stroke-width="6" marker-end="url(#kzB)"></line></svg>
+              <div style="flex:none;font-size:17px;letter-spacing:1.6px;text-transform:uppercase;color:#7DD3FC;width:190px;font-weight:500;">Reaction force<div style="font-size:13px;letter-spacing:1.4px;color:#64748B;">automatic · involuntary</div></div>
+            </div>
+          </div>
+          <div style="margin-top:36px;border-top:1px solid #1E293B;padding-top:22px;font-size:19px;line-height:1.5;color:#CBD5E1;text-align:center;">Pull left, and the reaction arrives on the right — <strong style="color:#F59E0B;font-weight:500;">for free.</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 -->
+  <section data-screen-label="03" style="{{ s3 }}">
+    <div style="display:grid;grid-template-columns:1fr 1fr;height:100%;">
+      <div style="padding:118px 60px 168px 72px;display:flex;flex-direction:column;justify-content:center;gap:19px;">
+        <div style="align-self:flex-start;border:1px solid rgba(245,158,11,.55);border-radius:20px;padding:11px 20px;line-height:1.4;max-width:100%;flex:none;font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#F59E0B;background:rgba(245,158,11,.08);">The practice</div>
+        <h1 style="font-family:'Alegreya Sans',sans-serif;color:#F8FAFC;font-size:78px;line-height:1.05;margin:0;font-weight:500;letter-spacing:-1.2px;">The Floor Spot Drill</h1>
+        <div style="width:100px;height:4px;background:#0078AE;"></div>
+        <div style="font-size:16px;letter-spacing:2.2px;text-transform:uppercase;color:#64748B;">Shoe-safe boundaries · hard floor</div>
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:660px;">
+          <button type="button" onClick="{{ pickSpot1 }}" onMouseEnter="{{ pickSpot1 }}" style="{{ spotBtn1 }}">
+            <span style="font-size:15px;letter-spacing:2px;text-transform:uppercase;opacity:.8;">Spot 1</span>
+            <span style="font-size:26px;font-weight:500;">Anchor / Attacker Home</span>
+          </button>
+          <button type="button" onClick="{{ pickSpot2 }}" onMouseEnter="{{ pickSpot2 }}" style="{{ spotBtn2 }}">
+            <span style="font-size:15px;letter-spacing:2px;text-transform:uppercase;opacity:.8;">Spot 2</span>
+            <span style="font-size:26px;font-weight:500;">The Step-Through Target</span>
+          </button>
+          <button type="button" onClick="{{ pickSpot3 }}" onMouseEnter="{{ pickSpot3 }}" style="{{ spotBtn3 }}">
+            <span style="font-size:15px;letter-spacing:2px;text-transform:uppercase;opacity:.8;">Spot 3</span>
+            <span style="font-size:26px;font-weight:500;">The Safety Stop Line</span>
+          </button>
+        </div>
+        <div style="display:flex;gap:16px;align-items:center;background:rgba(232,32,17,.1);border:1px solid rgba(232,32,17,.45);border-radius:6px;padding:16px 20px;max-width:660px;">
+          <span style="font-size:15px;letter-spacing:2px;text-transform:uppercase;color:#FCA5A5;flex:none;">Non-negotiable</span>
+          <span style="font-size:21px;line-height:1.4;color:#F8FAFC;">Hold elbows tightly like a seatbelt.</span>
+        </div>
+      </div>
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;background:#111C33;border-left:1px solid #1E293B;padding:0 60px;">
+        <div style="width:100%;max-width:600px;">
+          <div style="font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#64748B;margin-bottom:44px;text-align:center;">Linear floor map · hover or click a spot</div>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;">
+            <div style="position:absolute;left:34px;right:34px;top:33px;height:3px;background:repeating-linear-gradient(90deg,#334155 0 14px,transparent 14px 26px);"></div>
+            <div onClick="{{ pickSpot1 }}" onMouseEnter="{{ pickSpot1 }}" style="{{ spotDot1 }}">1</div>
+            <div onClick="{{ pickSpot2 }}" onMouseEnter="{{ pickSpot2 }}" style="{{ spotDot2 }}">2</div>
+            <div onClick="{{ pickSpot3 }}" onMouseEnter="{{ pickSpot3 }}" style="{{ spotDot3 }}">3</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:18px;font-size:15px;letter-spacing:1.6px;text-transform:uppercase;color:#64748B;">
+            <span>Anchor</span><span>Target</span><span>Stop line</span>
+          </div>
+          <div style="margin-top:48px;background:#0F172A;border:1px solid #334155;border-left:4px solid #F59E0B;border-radius:4px;padding:30px 32px;min-height:200px;">
+            <div style="font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:#F59E0B;margin-bottom:12px;">Spot {{ spot }} · Safety rule</div>
+            <div style="font-family:'Alegreya Sans',sans-serif;font-size:34px;font-weight:500;margin-bottom:14px;">{{ spotTitle }}</div>
+            <div style="font-size:21px;line-height:1.55;color:#CBD5E1;">{{ spotRule }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4 -->
+  <section data-screen-label="04" style="{{ s4 }}">
+    <div style="display:grid;grid-template-columns:1fr 1fr;height:100%;">
+      <div style="padding:124px 60px 176px 72px;display:flex;flex-direction:column;justify-content:center;gap:22px;">
+        <div style="align-self:flex-start;border:1px solid rgba(245,158,11,.55);border-radius:20px;padding:11px 20px;line-height:1.4;max-width:100%;flex:none;font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#F59E0B;background:rgba(245,158,11,.08);">The test</div>
+        <h1 style="font-family:'Alegreya Sans',sans-serif;color:#F8FAFC;font-size:78px;line-height:1.05;margin:0;font-weight:500;letter-spacing:-1.2px;">Read, Don't Rehearse</h1>
+        <div style="width:100px;height:4px;background:#0078AE;"></div>
+        <p style="font-size:24px;line-height:1.5;margin:0;color:#CBD5E1;max-width:660px;">Mixing random pressures forces real-time problem-solving instead of predictable muscle memory.</p>
+        <p style="font-size:21px;line-height:1.55;margin:0;color:#94A3B8;max-width:660px;">When the cue is unannounced, the attacker no longer knows which pressure is coming. Each repetition becomes a decision, not a rehearsal — so the reaction has to be read from the partner's body, not recalled from the drill order.</p>
+        <div style="display:flex;gap:14px;margin-top:6px;">
+          <button type="button" onClick="{{ setPull }}" style="{{ cuePullBtn }}">Cue: PULL</button>
+          <button type="button" onClick="{{ setPush }}" style="{{ cuePushBtn }}">Cue: PUSH</button>
+        </div>
+      </div>
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;background:#111C33;border-left:1px solid #1E293B;padding:0 56px;">
+        <div style="width:100%;">
+          <div style="font-size:14px;letter-spacing:2.4px;text-transform:uppercase;color:#64748B;margin-bottom:26px;text-align:center;">Cue and response · toggle the cue</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;">
+            <div style="{{ colPull }}">
+              <div style="{{ colPullHead }}">If cue is a PULL</div>
+              <div style="padding:26px 24px;display:flex;flex-direction:column;gap:22px;">
+                <div>
+                  <div style="font-size:14px;letter-spacing:2.2px;text-transform:uppercase;color:#64748B;margin-bottom:8px;">Reaction</div>
+                  <div style="font-size:23px;line-height:1.4;">Partner leans back</div>
+                </div>
+                <div style="height:1px;background:#334155;"></div>
+                <div>
+                  <div style="font-size:14px;letter-spacing:2.2px;text-transform:uppercase;color:#64748B;margin-bottom:8px;">Action</div>
+                  <div style="font-size:23px;line-height:1.4;font-weight:500;">Release &amp; step forward</div>
+                </div>
+                <div style="{{ arrowPull }}">→ Forward, into the space they just made</div>
+              </div>
+            </div>
+            <div style="{{ colPush }}">
+              <div style="{{ colPushHead }}">If cue is a PUSH</div>
+              <div style="padding:26px 24px;display:flex;flex-direction:column;gap:22px;">
+                <div>
+                  <div style="font-size:14px;letter-spacing:2.2px;text-transform:uppercase;color:#64748B;margin-bottom:8px;">Reaction</div>
+                  <div style="font-size:23px;line-height:1.4;">Partner leans forward</div>
+                </div>
+                <div style="height:1px;background:#334155;"></div>
+                <div>
+                  <div style="font-size:14px;letter-spacing:2.2px;text-transform:uppercase;color:#64748B;margin-bottom:8px;">Action</div>
+                  <div style="font-size:23px;line-height:1.4;font-weight:500;">Step sideways like a matador</div>
+                </div>
+                <div style="{{ arrowPush }}">↳ Sideways, let the force pass by</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:26px;text-align:center;font-size:19px;color:#CBD5E1;">Active cue: <strong style="color:#F59E0B;font-weight:500;">{{ cueLabel }}</strong> — {{ cueHint }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER NAV -->
+  <div style="position:absolute;left:0;right:0;bottom:0;height:132px;background:#0B1425;border-top:1px solid #1E293B;display:flex;align-items:center;gap:40px;padding:0 72px;z-index:4;">
+    <div style="display:flex;gap:14px;flex:none;">
+      <button type="button" onClick="{{ prev }}" style="{{ prevBtn }}">‹ &nbsp;Previous</button>
+      <button type="button" onClick="{{ next }}" style="{{ nextBtn }}">Next&nbsp; ›</button>
+    </div>
+    <div style="flex:1;">
+      <div style="display:flex;gap:8px;">
+        <button type="button" onClick="{{ go1 }}" style="{{ seg1 }}"><span style="font-size:13px;letter-spacing:1.8px;text-transform:uppercase;">0:00 – 0:02</span><span style="font-size:16px;font-weight:500;">Welcome</span></button>
+        <button type="button" onClick="{{ go2 }}" style="{{ seg2 }}"><span style="font-size:13px;letter-spacing:1.8px;text-transform:uppercase;">0:02 – 0:04</span><span style="font-size:16px;font-weight:500;">The Core Physics</span></button>
+        <button type="button" onClick="{{ go3 }}" style="{{ seg3 }}"><span style="font-size:13px;letter-spacing:1.8px;text-transform:uppercase;">0:04 – 0:06</span><span style="font-size:16px;font-weight:500;">3-Spot Safety Grid</span></button>
+        <button type="button" onClick="{{ go4 }}" style="{{ seg4 }}"><span style="font-size:13px;letter-spacing:1.8px;text-transform:uppercase;">0:07 – 0:09</span><span style="font-size:16px;font-weight:500;">Mixed cues</span></button>
+      </div>
+    </div>
+    <div style="flex:none;display:flex;align-items:center;gap:22px;">
+      <div style="text-align:right;">
+        <div style="font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:#64748B;">Time remaining</div>
+        <div style="font-family:'Alegreya Sans',sans-serif;font-size:46px;line-height:1;font-weight:500;color:{{ clockColor }};font-variant-numeric:tabular-nums;">{{ clock }}</div>
+      </div>
+      <button type="button" onClick="{{ toggleTimer }}" style="{{ timerBtn }}">{{ timerLabel }}</button>
+      <button type="button" onClick="{{ resetTimer }}" style="border:1px solid #334155;background:transparent;color:#94A3B8;border-radius:20px;padding:10px 18px;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;cursor:pointer;font-family:Roboto,Arial,sans-serif;">Reset</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1600,&quot;height&quot;:900}}">
+const SPOTS = {
+  1: { title: "Anchor / Attacker Home", rule: "Feet stay planted on this mark. It is the only fixed point in the drill — the attacker returns here after every repetition, so nobody drifts across the floor in shoes." },
+  2: { title: "The Step-Through Target", rule: "One controlled step lands here, heel down first. No sliding, no scuffing, no crossing the feet — on a hard floor the step must be placed, not thrown." },
+  3: { title: "The Safety Stop Line", rule: "All movement ends at this line. Nobody travels past it, and if either partner reaches it the repetition is over — reset, re-grip the elbows, and begin again." }
+};
+const RANGES = ["0:00 – 0:02", "0:02 – 0:04", "0:04 – 0:06", "0:07 – 0:09"];
+
+class Component extends DCLogic {
+  state = { i: 0, spot: 1, cue: "pull", remaining: 600, running: false, scale: 1 };
+
+  componentDidMount() {
+    this.fit();
+    this._ro = new ResizeObserver(() => this.fit());
+    if (this.host) this._ro.observe(this.host);
+    window.addEventListener("resize", this.fit);
+    this._key = (e) => {
+      if (e.key === "ArrowRight" || e.key === "PageDown") this.go(this.state.i + 1);
+      if (e.key === "ArrowLeft" || e.key === "PageUp") this.go(this.state.i - 1);
+    };
+    window.addEventListener("keydown", this._key);
+    this._tick = setInterval(() => {
+      if (this.state.running) this.setState(s => ({ remaining: Math.max(0, s.remaining - 1) }));
+    }, 1000);
+  }
+  componentWillUnmount() {
+    if (this._ro) this._ro.disconnect();
+    window.removeEventListener("resize", this.fit);
+    window.removeEventListener("keydown", this._key);
+    clearInterval(this._tick);
+  }
+  fit = () => {
+    const el = this.host;
+    if (!el) return;
+    const s = Math.min(el.clientWidth / 1600, el.clientHeight / 900);
+    if (s > 0 && Math.abs(s - this.state.scale) > 0.002) this.setState({ scale: s });
+  };
+  go(n) {
+    const i = Math.max(0, Math.min(3, n));
+    if (i !== this.state.i) this.setState({ i, running: true });
+  }
+  layer(idx) {
+    const i = this.state.i;
+    const active = i === idx;
+    return "position:absolute;inset:0;transition:opacity .5s ease, transform .55s cubic-bezier(.22,.61,.36,1);opacity:" +
+      (active ? 1 : 0) + ";transform:translateX(" + (active ? 0 : (idx < i ? -60 : 60)) + "px) scale(" +
+      (active ? 1 : 0.985) + ");pointer-events:" + (active ? "auto" : "none") + ";";
+  }
+  spotBtn(n) {
+    const on = this.state.spot === n;
+    return "display:flex;flex-direction:column;gap:4px;align-items:flex-start;text-align:left;cursor:pointer;font-family:Roboto,Arial,sans-serif;padding:14px 22px;border-radius:6px;transition:background .25s, border-color .25s, color .25s;background:" +
+      (on ? "rgba(245,158,11,.12)" : "transparent") + ";border:1px solid " + (on ? "#F59E0B" : "#334155") +
+      ";border-left:4px solid " + (on ? "#F59E0B" : "#334155") + ";color:" + (on ? "#F8FAFC" : "#94A3B8") + ";";
+  }
+  spotDot(n) {
+    const on = this.state.spot === n;
+    return "position:relative;z-index:1;width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'Alegreya Sans',sans-serif;font-size:28px;font-weight:500;transition:all .25s ease;background:" +
+      (on ? "#F59E0B" : "#0F172A") + ";color:" + (on ? "#0F172A" : "#94A3B8") + ";border:3px solid " +
+      (on ? "#F59E0B" : "#334155") + ";box-shadow:" + (on ? "0 0 40px rgba(245,158,11,.55)" : "none") + ";";
+  }
+  col(kind) {
+    const on = this.state.cue === kind;
+    return "background:#0F172A;border:1px solid " + (on ? "#F59E0B" : "#1E293B") + ";border-radius:6px;overflow:hidden;transition:all .3s ease;opacity:" +
+      (on ? 1 : 0.45) + ";transform:translateY(" + (on ? "-4px" : "0") + ");box-shadow:" + (on ? "0 18px 40px rgba(0,0,0,.45)" : "none") + ";";
+  }
+  colHead(kind) {
+    const on = this.state.cue === kind;
+    return "padding:18px 24px;font-size:19px;letter-spacing:2.2px;text-transform:uppercase;font-weight:500;transition:all .3s ease;background:" +
+      (on ? "#F59E0B" : "#16223C") + ";color:" + (on ? "#0F172A" : "#94A3B8") + ";";
+  }
+  arrow(kind) {
+    const on = this.state.cue === kind;
+    return "font-size:18px;line-height:1.4;padding:12px 16px;border-radius:4px;transition:all .3s ease;background:" +
+      (on ? "rgba(245,158,11,.14)" : "transparent") + ";color:" + (on ? "#F59E0B" : "#475569") + ";border:1px dashed " +
+      (on ? "rgba(245,158,11,.5)" : "#334155") + ";";
+  }
+  cueBtn(kind) {
+    const on = this.state.cue === kind;
+    return "cursor:pointer;font-family:Roboto,Arial,sans-serif;border-radius:20px;padding:14px 30px;font-size:17px;letter-spacing:2px;text-transform:uppercase;font-weight:500;transition:all .25s ease;background:" +
+      (on ? "#F59E0B" : "transparent") + ";color:" + (on ? "#0F172A" : "#94A3B8") + ";border:1px solid " +
+      (on ? "#F59E0B" : "#334155") + ";";
+  }
+  seg(idx) {
+    const on = this.state.i === idx;
+    return "flex:1;display:flex;flex-direction:column;gap:4px;align-items:flex-start;text-align:left;cursor:pointer;font-family:Roboto,Arial,sans-serif;padding:12px 16px;border:0;border-top:4px solid " +
+      (on ? "#F59E0B" : "#1E293B") + ";background:" + (on ? "rgba(245,158,11,.08)" : "transparent") +
+      ";color:" + (on ? "#F8FAFC" : "#64748B") + ";transition:all .25s ease;";
+  }
+  navBtn(disabled) {
+    return "cursor:" + (disabled ? "default" : "pointer") + ";font-family:Roboto,Arial,sans-serif;border-radius:20px;padding:14px 26px;font-size:16px;letter-spacing:1.6px;text-transform:uppercase;font-weight:500;transition:all .2s ease;background:" +
+      (disabled ? "transparent" : "#018489") + ";color:" + (disabled ? "#475569" : "#F8FAFC") +
+      ";border:1px solid " + (disabled ? "#1E293B" : "#018489") + ";opacity:" + (disabled ? 0.65 : 1) + ";";
+  }
+
+  renderVals() {
+    const s = this.state;
+    const m = Math.floor(s.remaining / 60), sec = s.remaining % 60;
+    return {
+      hostRef: (el) => { this.host = el; this.fit(); },
+      stageTransform: "scale(" + s.scale + ")",
+      s1: this.layer(0), s2: this.layer(1), s3: this.layer(2), s4: this.layer(3),
+      slideNo: "0" + (s.i + 1),
+      slideRange: RANGES[s.i],
+      elapsedPct: ((600 - s.remaining) / 600 * 100).toFixed(2) + "%",
+      clock: m + ":" + String(sec).padStart(2, "0"),
+      clockColor: s.remaining <= 60 ? "#F59E0B" : "#F8FAFC",
+      timerLabel: s.running ? "Pause" : (s.remaining === 600 ? "Start" : "Resume"),
+      timerBtn: "cursor:pointer;font-family:Roboto,Arial,sans-serif;border-radius:20px;padding:10px 22px;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;font-weight:500;background:" +
+        (s.running ? "transparent" : "#F59E0B") + ";color:" + (s.running ? "#F59E0B" : "#0F172A") + ";border:1px solid #F59E0B;",
+      toggleTimer: () => this.setState(st => ({ running: !st.running })),
+      resetTimer: () => this.setState({ remaining: 600, running: false }),
+      prev: () => this.go(s.i - 1),
+      next: () => this.go(s.i + 1),
+      prevBtn: this.navBtn(s.i === 0),
+      nextBtn: this.navBtn(s.i === 3),
+      go1: () => this.go(0), go2: () => this.go(1), go3: () => this.go(2), go4: () => this.go(3),
+      seg1: this.seg(0), seg2: this.seg(1), seg3: this.seg(2), seg4: this.seg(3),
+      pickSpot1: () => this.setState({ spot: 1 }),
+      pickSpot2: () => this.setState({ spot: 2 }),
+      pickSpot3: () => this.setState({ spot: 3 }),
+      spot: s.spot,
+      spotTitle: SPOTS[s.spot].title,
+      spotRule: SPOTS[s.spot].rule,
+      spotBtn1: this.spotBtn(1), spotBtn2: this.spotBtn(2), spotBtn3: this.spotBtn(3),
+      spotDot1: this.spotDot(1), spotDot2: this.spotDot(2), spotDot3: this.spotDot(3),
+      setPull: () => this.setState({ cue: "pull" }),
+      setPush: () => this.setState({ cue: "push" }),
+      cuePullBtn: this.cueBtn("pull"), cuePushBtn: this.cueBtn("push"),
+      colPull: this.col("pull"), colPush: this.col("push"),
+      colPullHead: this.colHead("pull"), colPushHead: this.colHead("push"),
+      arrowPull: this.arrow("pull"), arrowPush: this.arrow("push"),
+      cueLabel: s.cue === "pull" ? "PULL" : "PUSH",
+      cueHint: s.cue === "pull" ? "the partner's weight is travelling away from you, so give it room." : "the partner's weight is travelling toward you, so leave the line entirely."
+    };
+  }
+}
+
+</script>
+</body>
+</html>
