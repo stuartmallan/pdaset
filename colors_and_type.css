@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Pegasus Design System — Colours, Type, Tokens
+   Source of truth: peg-ui/src/sass/_variables.scss
+   All values mirror the Bootstrap 4.1 + Pegasus SCSS setup.
+   ========================================================================== */
+
+/* Web fonts — Roboto + Alegreya Sans from Google Fonts (matches peg-ui $font-family-sans-serif / $font-family-headings-sans-serif) */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700&display=swap");
+/* CDN copy of FontAwesome 4.7 — full glyph map (@import must come first per CSS spec) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* FontAwesome 4.7 — local fonts shipped by peg-assests, override @font-face so the woff2 we copied in is used */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+       url("fonts/fontawesome-webfont.woff?v=4.7.0")  format("woff"),
+       url("fonts/fontawesome-webfont.ttf?v=4.7.0")   format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* ---------- Colour palette ---------- */
+
+  /* Grays (Bootstrap 4 scale + Pegasus 50) */
+  --peg-gray-50:  #fdfdfd;
+  --peg-gray-100: #f8f9fa;
+  --peg-gray-200: #e9ecef;
+  --peg-gray-300: #dee2e6;
+  --peg-gray-400: #ced4da;
+  --peg-gray-500: #adb5bd;
+  --peg-gray-600: #6c757d;
+  --peg-gray-700: #495057;   /* = gray-accessible (AAA body) */
+  --peg-gray-800: #343a40;
+  --peg-gray-900: #212529;
+  --peg-gray-accessible: #495057;
+  --peg-black: #000;
+  --peg-white: #fff;
+
+  /* Brand */
+  --peg-corpblue:   #002b5c;  /* strath-corpblue, header + primary brand */
+  --peg-strath-blue: #0078ae; /* accent, links, focus, blue-hr, tab indicator */
+  --peg-teal:       #018489;  /* primary action (btn-primary) */
+  --peg-teal-hover: #015c60;  /* teal darkened 10% */
+
+  --peg-primary:     var(--peg-teal);
+  --peg-primaryblue: var(--peg-corpblue);
+  --peg-link:        var(--peg-strath-blue);
+
+  /* Semantics */
+  --peg-red:    #e82011;  /* danger */
+  --peg-orange: #f47b20;  /* warning */
+  --peg-green:  #218739;  /* success */
+  --peg-blue:   #0078ae;  /* info */
+  --peg-danger:  var(--peg-red);
+  --peg-warning: var(--peg-orange);
+  --peg-success: var(--peg-green);
+  --peg-info:    var(--peg-blue);
+
+  /* Support */
+  --peg-superlight:  var(--peg-gray-50);
+  --peg-highlighted: #cfeaf7;          /* lighten(strath-blue, 55%) */
+  --peg-code:        #a41357;
+  --peg-alert-link:  #006594;          /* bold links inside .alert */
+
+  /* Foreground / background semantic aliases */
+  --peg-bg:         var(--peg-white);
+  --peg-bg-subtle:  var(--peg-gray-100);
+  --peg-bg-band:    var(--peg-gray-200);  /* breadcrumbs band */
+  --peg-bg-footer:  var(--peg-gray-900);
+  --peg-bg-header:  var(--peg-corpblue);
+  --peg-fg:         var(--peg-gray-900);
+  --peg-fg-muted:   var(--peg-gray-700);
+  --peg-fg-subtle:  var(--peg-gray-600);
+  --peg-fg-invert:  var(--peg-white);
+  --peg-border:     var(--peg-gray-300);
+  --peg-border-accessible: var(--peg-gray-accessible);
+
+  /* ---------- Typography ---------- */
+
+  --peg-font-sans:     "Roboto", Arial, Verdana, sans-serif;
+  --peg-font-headings: "Alegreya Sans", "Roboto", Arial, Verdana, sans-serif;
+  --peg-font-mono:     SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --peg-font-fa:       "FontAwesome", sans-serif;
+
+  --peg-font-base: 1rem;         /* 16px */
+  --peg-font-sm:   0.875rem;
+  --peg-font-xs:   0.75rem;
+
+  --peg-h1: 1.9rem;
+  --peg-h2: 1.75rem;
+  --peg-h3: 1.5rem;
+  --peg-h4: 1.25rem;
+  --peg-h5: 1.1rem;
+  --peg-h6: 1rem;
+
+  --peg-weight-regular: 400;
+  --peg-weight-bold: 500;        /* Pegasus bold is 500 */
+  --peg-weight-heavy: 700;
+
+  --peg-line-paragraph: 1.4;   /* @kind font */
+  --peg-line-tight:     1.25;  /* @kind font */
+  --peg-line-heading:   1.2;   /* @kind font */
+
+  /* ---------- Spacing ---------- */
+
+  --peg-space-0: 0;
+  --peg-space-1: 0.25rem;
+  --peg-space-2: 0.5rem;
+  --peg-space-3: 1rem;      /* $spacer */
+  --peg-space-4: 1.5rem;
+  --peg-space-5: 3rem;
+
+  /* Shell dimensions (from _variables.scss) */
+  --peg-header-height:        3.75rem;
+  --peg-footer-height:        3.75rem;
+  --peg-breadcrumbs-height:   3.125rem;
+  --peg-sidebar-width:        20rem;
+  --peg-sidebar-mobile-width: 5rem;
+  --peg-sidebar-collapse-height: 3.75rem;
+  --peg-service-message-height: 3.125rem;
+  --peg-form-max-width:       600px;
+  --peg-aside-max-width:      31.25rem;
+
+  /* ---------- Borders, radii, shadows ---------- */
+
+  --peg-radius: 0.25rem;                /* Bootstrap default */
+  --peg-radius-pill: 20px;              /* $btn-border-radius — signature pill */
+  --peg-border-1: 1px solid var(--peg-gray-300);
+  --peg-border-accent: 4px solid var(--peg-strath-blue);      /* blue-hr, .blue-border */
+  --peg-border-input-bottom: 1px solid var(--peg-gray-accessible);
+
+  --peg-shadow-md:         0 0.25rem 0.3125rem rgba(0,0,0,0.15);
+  --peg-shadow-md-hover:   0 0.25rem 0.5rem    rgba(0,0,0,0.40);
+  --peg-shadow-md-white:   0 0.25rem 0.3125rem rgba(255,255,255,0.15);
+  --peg-shadow-focus:      0 0 0 0.2rem rgba(0, 43, 92, 0.55); /* component-active */
+
+  /* ---------- Motion ---------- */
+  --peg-ease: 0.3s ease;               /* @kind other */
+  --peg-ease-quick: 0.15s ease;        /* @kind other */
+  --peg-ease-in-out: 0.3s ease-in-out; /* @kind other */
+
+  /* ---------- Z-index ---------- */
+  --peg-z-header: 4;          /* @kind other */
+  --peg-z-header-search: 5;   /* @kind other */
+  --peg-z-sidebar: 1;         /* @kind other */
+  --peg-z-footer: 2;          /* @kind other */
+  --peg-z-breadcrumb: 0;      /* @kind other */
+  --peg-z-modal: 1050;        /* @kind other */
+}
+
+/* ==========================================================================
+   Base resets (mirrors peg-ui base.scss patterns lightly)
+   ========================================================================== */
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: var(--peg-font-sans);
+  font-size: var(--peg-font-base);
+  font-weight: var(--peg-weight-regular);
+  color: var(--peg-fg);
+  background: var(--peg-bg);
+  line-height: var(--peg-line-paragraph);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+p { margin: 0 0 1rem; line-height: var(--peg-line-paragraph); }
+
+a { color: var(--peg-link); text-decoration: underline; }
+a:hover { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--peg-font-headings);
+  font-weight: var(--peg-weight-heavy);
+  line-height: var(--peg-line-heading);
+  margin: 0 0 0.5rem;
+  color: var(--peg-fg);
+}
+h1 { font-size: var(--peg-h1); }
+h2 { font-size: var(--peg-h2); }
+h3 { font-size: var(--peg-h3); }
+h4 { font-size: var(--peg-h4); }
+h5 { font-size: var(--peg-h5); }
+h6 { font-size: var(--peg-h6); }
+
+pre, code, kbd, samp {
+  font-family: var(--peg-font-mono);
+  background: var(--peg-gray-100);
+  color: var(--peg-code);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.95em;
+}
+pre {
+  padding: 1rem;
+  max-height: 300px;
+  white-space: pre-wrap;
+  color: inherit;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--peg-gray-400);
+  margin: 1rem 0;
+}
+hr.peg-blue-hr {
+  border-top: 3px solid var(--peg-strath-blue);
+  max-width: 100px;
+  margin: 0 0 40px;
+}
+
+/* ==========================================================================
+   Semantic type helpers (use these in mocks directly)
+   ========================================================================== */
+
+.peg-display   { font-family: var(--peg-font-headings); font-size: 2.5rem; font-weight: 800; line-height: 1.1; }
+.peg-h1        { font-family: var(--peg-font-headings); font-size: var(--peg-h1); font-weight: 700; }
+.peg-h2        { font-family: var(--peg-font-headings); font-size: var(--peg-h2); font-weight: 700; }
+.peg-h3        { font-family: var(--peg-font-headings); font-size: var(--peg-h3); font-weight: 700; }
+.peg-h4        { font-family: var(--peg-font-headings); font-size: var(--peg-h4); font-weight: 700; }
+.peg-label     { font-size: var(--peg-font-base); color: var(--peg-link); margin-bottom: 0.25rem; display: block; }
+.peg-help      { font-size: var(--peg-font-sm); color: var(--peg-fg-subtle); }
+.peg-small     { font-size: var(--peg-font-sm); }
+.peg-muted     { color: var(--peg-fg-muted); }
+.peg-mono      { font-family: var(--peg-font-mono); }
+.peg-fg-link   { color: var(--peg-link); }
+
+/* Utility background/foreground ---------------------------------------------*/
+.peg-bg-corpblue { background: var(--peg-corpblue); color: var(--peg-white); }
+.peg-bg-teal     { background: var(--peg-teal);     color: var(--peg-white); }
+.peg-bg-subtle   { background: var(--peg-bg-subtle); }
+.peg-bg-band     { background: var(--peg-bg-band); }
+.peg-bg-dark     { background: var(--peg-gray-900); color: var(--peg-white); }
+
+/* Focus ring (Pegasus style) */
+.peg-focus-ring:focus,
+.peg-focus-ring:focus-visible {
+  outline: 0.2rem solid var(--peg-strath-blue);
+  outline-offset: 1px;
+  box-shadow: var(--peg-shadow-focus);
+}

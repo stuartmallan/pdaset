@@ -1,0 +1,7 @@
+/* ==========================================================================
+   Pegasus Design System — global entry point
+   Consumers link THIS one file. It pulls in the design tokens + base resets.
+   (Per-component and per-app sheets under preview/ and ui_kits/ are page-scoped
+   and are linked by those pages directly.)
+   ========================================================================== */
+@import url("colors_and_type.css");
